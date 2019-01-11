@@ -10,12 +10,12 @@ var Contact = React.createClass({
 	    <div className={'contactInfo'}> 
 	      <div className={'contactLabel'}>Imię:
 		<p className={'contactLabelVal'}>
-		  {this.props.contact.firstName}
+		  {this.props.item.firstName}
 		</p>
 	      </div> 
 	       <div className={'contactLabel'}> Nazwisko:
 		 <p className={'contactLabelVal'}>
-		  {this.props.contact.lastName}
+		  {this.props.item.lastName}
 		</p>
 	      </div>
 	      <a href={'mailto:' + this.props.item.email}>
