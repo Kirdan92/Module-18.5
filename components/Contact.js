@@ -8,11 +8,11 @@ var Contact = React.createClass({
 	<div className={'contactItem'}>
 	    <img className={'contactImage'} src={'./images/profile.png'}/>
 	    <div className={'contactInfo'}> 
-	      <div className={contactLabel} Imię:
+	      <div className={'contactLabel'}>Imię:
 		<p className={'contactLabelVal'}>
 		  {this.props.contact.firstName}
 		</p>
-	      <div> 
+	      </div> 
 	       <div className={'contactLabel'}> Nazwisko:
 		 <p className={'contactLabelVal'}>
 		  {this.props.contact.lastName}
