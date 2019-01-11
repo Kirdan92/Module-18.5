@@ -5,21 +5,22 @@ var Contact = React.createClass({
 
   render: function() {
     return (
-      React.createElement('div', {className: 'contactItem'},
-        React.createElement('img', {
-          className: 'contactImage',
-          src: './images/profile.png'
-        }),
-        React.createElement('div', {className: 'contactInfo'},
-	        React.createElement('div', {className: 'contactLabel'}, 'Imię: ' ,
-	        	React.createElement ('p', {className: 'contactLabelVal'}, this.props.item.firstName)),
-	        React.createElement('div', {className: 'contactLabel'}, 'Nazwisko: ',
-	        	React.createElement ('p', {className: 'contactLabelVal'}, this.props.item.lastName)),
-	        React.createElement('a', {className: 'contactEmail', href: 'mailto:' + this.props.item.email},
-	          this.props.item.email
-	        )
-        )
-      )
+	<div className={'contactItem'}>
+	    <img className={'contactImage'} src={'./images/profile.png'}/>
+	    <div className={'contactInfo'}> Imię:
+	       <p className={'contactLabelVal'}>
+		{this.props.contact.firstName}
+	      </p>
+	    </div>
+	     <div className={'contactInfo'}> Nazwisko:
+	       <p className={'contactLabelVal'}>
+		{this.props.contact.lastName}
+	      </p>
+	    </div>
+	    <a href={'mailto:' + this.props.item.email}>
+		{this.props.item.email}
+	    </a>
+	</div>
     )
   },
 });
